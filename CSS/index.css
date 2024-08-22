@@ -1,0 +1,153 @@
+:root {
+  --color-primary: #3498db;
+  --color-secondary: #2c3e50;
+  --color-accent: #e74c3c;
+  --color-background: #ecf0f1;
+  --color-text: #333;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--color-text);
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+header h1 {
+
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+nav {
+  background-color: var(--color-secondary);
+  padding: 0.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  color: var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+  padding-bottom: 0.5rem;
+}
+
+.inicio img {
+  width: 300px; 
+  height:350px; 
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
+
+.categorias ul, .productos ul, .ofertas ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.categorias li, .productos li, .ofertas li {
+  margin: 1rem;
+  text-align: center;
+}
+
+.productos img, .ofertas img {
+  max-width: 200px;
+  height: auto;
+}
+
+.productos a, .ofertas a {
+  display: inline-block;
+  background-color: var(--color-accent);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+}
+
+.contactanos form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactanos input, .contactanos textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.contactanos button {
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+footer {
+  background-color: var(--color-secondary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .productos ul, .ofertas ul {
+    flex-direction: column;
+  }
+}
